@@ -1,1 +1,23 @@
-        count =count-1;        count=count/2;        }            current=current.next;            count++;        {        current=head;        while(c<=count)        {            c++;            current=current.next;                   }
+1/**
+2 * Definition for singly-linked list.
+3 * public class ListNode {
+4 *     int val;
+5 *     ListNode next;
+6 *     ListNode() {}
+7 *     ListNode(int val) { this.val = val; }
+8 *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+9 * }
+10 */
+11class Solution {
+12    public ListNode middleNode(ListNode head) {
+13        ListNode slow = head;
+14        ListNode fast = head;
+15        while(fast!=null&&fast.next!=null)
+16        {
+17            fast=fast.next.next;
+18            slow=slow.next;
+19        }
+20        return slow;
+21        
+22    }
+23}
