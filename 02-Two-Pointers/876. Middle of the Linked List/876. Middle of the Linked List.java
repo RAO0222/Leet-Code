@@ -1,0 +1,1 @@
+        count =count-1;        count=count/2;        }            current=current.next;            count++;        {        current=head;        while(c<=count)        {            c++;            current=current.next;                   }
